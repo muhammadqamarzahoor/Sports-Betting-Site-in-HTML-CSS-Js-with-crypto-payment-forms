@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="../CSS/index.css">
+  <link rel="stylesheet" href="../CSS/moneyform.css">
+  <link rel="stylesheet" href="../CSS/optionsStyle.css">
+  <link rel="stylesheet" href="../CSS/login.css">
+  <link rel="stylesheet" href="../CSS/profile.css">
+  <script src="../js/index.js"></script>
+  <script src="../js/moneyform.js"></script>
+  <script src="../js/login.js" ></script> 
+  <script src="../js/options.js"></script>
+  <script src="../js/profile.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>GamBlify</title> 
+</head>
+<body id="body">
+    <header>
+        <div class="main_header">
+            <div class="logo_div">
+               <img src="../img/gambly-logo.png" alt="" srcset="" class="logo">
+            </div>
+            <div class="main_menu">
+                <ul class="main_menu--ul-1">
+                    <li><a href="#" >SPORTS BETTING</a></li>
+                </ul>
+                <ul class="main_menu--ul-2">
+                    <li id="main_menu_li"></li>
+                    <li id="main_menu_li_1" class="main_menu_li_1" onclick="login_show()"><a href="#"id="main_menu_li_1_a">Login</a></li>
+                    <li id="main_menu_li_2" class="main_menu_li_2" onclick="signup_show()"><a href="#" id="main_menu_li_2_a">Sign up</a></li>
+                    <li id="main_menu_li_3" class="main_menu_li_3" >$0</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="Main--Section">
+        <div class="left_div">
+            <div class="left-side-menu">
+                <div class="left-icon-1 left-icon"><i class="fa-solid fa-home" ></i></div>
+                <div class="left-icon-2 left-icon"><i class="fa-solid fa-bolt"></i></div>
+                <div class="left-icon-3 left-icon"><i class="fa-solid fa-star"></i></div>
+                <div class="left-icon-4 left-icon"><i class="fa-solid fa-copy"></i></div>
+                <div class="left-icon-5 left-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
+            <ul class="left_ul--section">
+              <li>🔥Popular Now <i class="fa-solid fa-caret-down"></i></li>
+                <li><button><i class="fa-solid fa-futbol"></i>Soccer</button> <span>+</span></li>
+                <li><button><i class="fa-solid fa-futbol"></i>FIFA</button><span>+</span></li>
+                <li><button><i class="fa-solid fa-table-tennis-paddle-ball"></i>Tennis</button><span>+</span></li>
+                <li><button><i class="fa-solid fa-basketball"></i>Basket Ball</button><span>+</span></li>
+                <li><button><i class="fa-solid fa-person-walking"></i>Esports</button><span>+</span></li>
+                <li><button><i class="fa-solid fa-baseball-bat-ball"></i>Cricket</button><span>+</span></li>
+                <li><button><i class="fa-solid fa-baseball-bat-ball"></i>eCricket</button><span>+</span></li>
+                <li><button><i class="fa-solid fa-baseball"></i>BaseBall</button><span>+</span></li>
+                <li><button><i class="fa-solid fa-football"></i>American Football</button><span>+</span></li>
+                <li><button><i class="fa-solid fa-people-robbery"></i>Sumo</button><span>+</span></li>
+                <li><button><i class="fa-solid fa-person-skating"></i>Ice Hokey</button><span>+</span></li>
+                <li><button><i class="fa-solid fa-basketball"></i>NBA 2K</button><span>+</span></li>
+                <li><button><i class="fa-solid fa-volleyball"></i>Volley Ball</button><span>+</span></li>
+                <li><button><i class="fa-solid fa-futbol"></i>FIFA: Volta </button><span>+</span></li>
+                <li><button><i class="fa-solid fa-person-rifle"></i>Penalty Shootout </button><span>+</span></li>
+                <li><button><i class="fa-solid fa-baseball"></i>Handball </button><span>+</span></li>
+                <li><button><i class="fa-solid fa-volleyball"></i>Handball </button><span>+</span></li>
+                <li><button><i class="fa-solid fa-person"></i>Kabaddi</button><span>+</span></li>
+            </ul>
+            <div class="extra-left-div" style="height: 40vh;">
+
+            </div>
+        </div>
+
+        <div class="right_div">
+            <div class="slider_main--section">
+
+                <div class="slider_mainShow" id="slide_mainShow">
+                    <div class="slider--1 slider_img"> <img src="../img/1 (3).jpg" alt="" srcset=""> </div>
+                    <div class="slider--2 slider_img"> <img src="../img/1 (1).jpg" alt="" srcset=""><div><p>We are waiting for you</p><h1>Las Vegas</h1><button onclick=" openPokiSite()">Play Live Games </button></div></div>
+                    <div class="slider--3 slider_img"> <img src="../img/1 (2).jpg" alt="" srcset=""></div>
+                </div>
+                <button class="left-slider" onclick="slideback()"> <i class="fa-solid fa-angles-left"></i></button>
+
+                <button class="right-slider"onclick="slidefor()" ><i class="fa-solid fa-angles-right"></i> </button>
+
+            </div>
+            <div class="second_right-section">
+              <div class="second-right-div-menu">
+                <ul>
+                  <li> Popular</li>
+                  <li><img src="../img/Flag-England.webp" alt="">Priemier League</li>
+                  <li><img src="../img/pakistan flag.webp" alt="">LaLinga</li>
+                  <li><img src="../img/italy falg.png" alt="">Ligue 1</li>
+                </ul>
+              </div>
+              <div class="second-right-div-btn">
+              <button>👑 TOP Soccer <i class="fa-solid fa-caret-up"></i></button>
+            </div>
+                <div class="right--section-div">This Div is for mtach</div>
+                <div class="right--section-div">This Div is for mtach</div>
+                <div class="right--section-div">This Div is for mtach</div>
+                <div class="right--section-div">This Div is for mtach</div>
+                <div class="right--section-div">This Div is for mtach</div>
+                <div class="right--section-div">This Div is for mtach</div>
+                <div class="right--section-div">This Div is for mtach</div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <footer>
+        <div class="footer-container">
+            <!-- Section 1: Casino -->
+            <div class="footer-section">
+                <h4>Casino</h4>              
+              <ul>
+
+                <li><a href="#">Casino Home</a></li>
+                <li><a href="#">Slots</a></li>
+                <li><a href="#">Live Casino</a></li>
+                <li><a href="#">New Releases</a></li>
+                <li><a href="#">Recommended</a></li>
+                <li><a href="#">Table Game</a></li>
+                <li><a href="#">Baccarat</a></li>
+                <!-- Add more links as needed -->
+              </ul>
+            </div>
+        
+            <!-- Section 2: Sports -->
+            <div class="footer-section">
+                <h4>Sports</h4>              
+              <ul>
+
+                <li><a href="#">Sports Home</a></li>
+                <li><a href="#">Live</a></li>
+                <li><a href="#">Rules</a></li>
+              </ul>
+            </div>
+        
+            <!-- Section 3: Promo -->
+            <div class="footer-section">
+                <h4>Promo</h4>              
+              <ul>
+
+                <li><a href="#">VIP Club</a></li>
+                <li><a href="#">Affiliate</a></li>
+                <li><a href="#">Promotions</a></li>
+                <li><a href="#">Lottery</a></li>
+                <li><a href="#">Refer a friend</a></li>
+                <!-- Add more links as needed -->
+              </ul>
+            </div>
+        
+            <!-- Section 4: Support/Legal -->
+            <div class="footer-section">
+                <h4>Support/Legal</h4>              
+              <ul>
+
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Gambly Aware</a></li>
+                <li><a href="#">Fairness</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of services </a></li>
+                <li><a href="#">AML</a></li>
+                <!-- Add more links as needed -->
+              </ul>
+            </div>
+        
+            <!-- Section 5: About Us -->
+            <div class="footer-section">
+                <h4>About Us</h4>              
+              <ul>
+
+                <li><a href="#">News</a></li>
+                <li><a href="#">Busines Contact</a></li>
+                <li><a href="#">Help Desk</a></li>
+                <li><a href="#">Representative</a></li>
+                <!-- Add more links as needed -->
+              </ul>
+            </div>
+        
+            <!-- Section 6: Join Our Community -->
+            <div class="footer-section " >
+                <h4>Join Our Community</h4>              
+              <ul class="footer_join_com">
+                <div class="join-com-div"><i class="fa-brands fa-telegram"></i></div>
+                <div class="join-com-div"><i class="fa-brands fa-github"></i></div>
+                <div class="join-com-div"><i class="fa-brands fa-twitter"></i></div>
+                <div class="join-com-div"><i class="fa-brands fa-facebook-f"></i></div>
+                <div class="join-com-div"><i class="fa-brands fa-discord"></i></div>
+                <div class="join-com-div"><i class="fa-solid fa-bitcoin-sign"></i></div>
+                <div class="join-com-div"><i class="fa-brands fa-square-instagram"></i></div>
+                <!-- Add more links with logos as needed -->
+              </ul>
+            </div>
+          </div>
+        
+              <!-- Add this code inside the existing footer element -->
+              <div  id="sponser">
+                <h3>Sponsorships and Gaming</h3>
+                <div class="sponsor-logos">
+                  <!-- Logo 1 -->
+                  <img src="../img/sigma.png" alt="Logo 1" class="sponsor-logo" />
+                  <!-- Logo 2 -->
+                  <img src="../img/cloud9.png" alt="Logo 2" class="sponsor-logo" />
+                  <!-- Logo 3 -->
+                  <img src="../img/afa.png" alt="Logo 3" class="sponsor-logo" />
+                  <!-- Logo 4 -->
+                  <img src="../img/CGFVO.png" alt="Logo 4" class="sponsor-logo" />
+                  <!-- Logo 5 -->
+                  <img src="../img/itech.png" alt="Logo 5" class="sponsor-logo" />
+                  <!-- Logo 6 -->
+                  <img src="../img/rg.png" alt="Logo 6" class="sponsor-logo" />
+                </div>
+                <div class="age-warning">
+                    <p>18+</p>
+                  </div>
+              </div>
+             
+              <!-- Add this code inside the existing footer element -->
+              <div class="footer-section-last">
+                <!-- Left Section -->
+                <div class="last-footer-left-section">
+                  <img src="../img/gambly-logo.png" alt="Left Logo" class="footer-logo" />
+                  <p class="footer-text">A multi-award winning casino. With a player center-approach, Gamblify has its priority set on its community ensuring and endless entertainment gambling experience.</p>
+                </div>
+        
+                <!-- Right Section -->
+                <div class="last-footer-right-section">
+                  <p class="footer-text-1"> <img src="../img/lience.png" alt="">Gamblify is operated by BlockDance B.V (Commercial Register of Curaco no. 158182 ,Emancipate  Boulevord Dominico F."Don" ,Martina31.License #5536/JAZ</p>
+                  <p class="footer-text-2">&copy; 2023 GambLify All Rights Reserved </p>
+                </div>
+              </div>
+    </footer>
+
+</body>
+<div class="body-class" id="deposite_div">
+  <section class="money-section">
+      <div class="main-header-money">
+          <div class="main-header-btn">
+              <button class="deposit-btn" id="deposit-btn" onclick="deposit_btn()" >Deposite</button>
+              <button class="withdraw-btn" id="withdraw-btn" onclick="withdraw_btn()">Withdraw</button>
+          </div>
+          <div class="close-btn" id="close-btn" >
+              <span class="cross-lines" onclick="show_body()"></span>
+          </div>
+      </div>
+      <div class="body-section-money" id="main-body-options">
+          <div class="heaidng-body-section-money" id="heading-option">
+
+          </div>
+          <div class="body-2-section-money" id="body-options" >
+          </div>
+      </div>
+  </section>
+</div>
+<div id="login_div" class="login_body">
+  <section class="main_body-login">
+      <section class="left-section-login">
+          <div class="option-login">
+              <button class="login-btn"id="login_btn_col" onclick="login_btn()" >LOGIN</button>
+              <button class="registration_btn" id="reg_btn_col" onclick="register_btn()" >REGISTER</button>
+          </div>
+          <form action="" class="form-login">
+              <div class="option-body-login" id="options_body_login"></div>
+              <p class="left_text_login">This site is protected by reCAPTCHA and the Google Privacy Police and Terms of Service apply.</p>
+              <input type="button" value="LOGIN" class="Submit_btn-login" id="Submit_btn_login" onclick="change_header()">
+          </form>
+      </section>
+      <section class="right-section-login">
+          <div class="logo-login"><img src="../img/gambly-logo.png" alt=""><span class="cross-lines" onclick="show_body_login()"></span></div>
+          <img src="../img/poker-img.png" alt="" class="img-login">
+          <p class="right-text-login">By accessing the site, I attest that I am at least 18 years old and have read the Terms & Conditions.</p>
+      </section>
+  </section>
+</div>
+  
+<div class="profile_div" id="profile_div">
+  <section class="main_seciton-profile">
+
+      <div class="left_side-profile">
+          <button id="profile_btn_1" onclick="profile_btn()"><i class="fa-solid fa-user"></i>Profile</button>
+          <button id="profile_btn_2" onclick="balance_btn()"><i class="fa-solid fa-sack-dollar"></i>Balanace</button>
+          <button id="profile_btn_3" onclick="history_btn()"><i class="fa-solid fa-clock-rotate-left"></i>Histroy</button>
+          <button id="profile_btn_4"><i class="fa-solid fa-right-from-bracket"></i>Log Out</button>
+      </div>
+      <div class="right_side-profile">
+          <div class="right-side-heading-profile" id="right_side_heading_profile"> </div> 
+          <div class="right-side-body-profile" id="right_side_body_profile"> </div>
+          <span class="cross-lines-profile" onclick="hide_profile()"></span>
+      </div>
+
+
+  </section>
+</div>
+</html>
+

@@ -1,0 +1,521 @@
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root
+{
+    --font-color:lightgrey;
+    --font-size:0.8rem;
+}
+
+.body-class
+{
+    width: 100%;
+    height: 100vh;
+    background-color: hsla(240, 22%, 9%, 0.548);
+    justify-content: center;
+    align-items: center;
+    font-family: arial;
+    flex-flow: column nowrap;
+    font-size: var( --font-size);
+    color: var(--font-color);
+
+}
+.money-section
+{
+    width: 55%;
+    min-height:70vh ;
+    max-height: fit-content;
+    background-color: hsl(240, 22%, 20%);
+    border-radius: 20px;
+    padding: 1.2rem;
+    padding-bottom: 0.7rem;
+    margin: 1rem;
+}
+.main-header-money
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;   
+}
+.main-header-money .main-header-btn button
+{
+    width: 6rem;
+    height: 2.7rem;
+    border-radius: 10px;
+    margin-right:0.2rem ;
+    background-color: hsl(240, 22%, 25%);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: lightgrey;
+    font-size: 1.05rem;
+}
+.close-btn
+{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 10px;
+
+}
+.close-btn .cross-lines
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding:15px  0px;
+}
+.cross-lines::before,
+.cross-lines::after {
+    content: '';
+    display: block;
+    width: 27px;
+    height: 4px;
+    background-color: white;
+    border-radius: 3px;
+}
+.cross-lines::before
+{
+    transform: rotate(45deg);
+}
+.cross-lines::after
+{
+    transform: translateY(-4px)rotate(135deg);
+}
+.cross-lines:is(:hover,:active)::before,
+.cross-lines:is(:hover,:active)::after {
+    background-color: rgb(200, 134, 2);
+}
+/* Functions CSS */
+
+/* Desposit - btn */
+:root
+{
+    --D-height-of-heading:8vh;
+    --D-height-of-body-options:20vh;
+    
+    --M-margin-of-body-div:1rem;
+}
+.deposit-heaidng-div
+{
+    width: 100%;
+    height: var(--D-height-of-heading);
+}
+.deposit-heaidng-div h1
+{
+    line-height: var(--D-height-of-heading);
+    color: white;
+    font-weight: normal;
+}
+.deposit-options-div
+{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap:2rem ;
+}
+.deposit-options-div figure
+{
+    max-width:11.5vw ;
+    background-color: hsl(240, 22%, 25%);
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: column nowrap;
+    border-radius: 10px;
+    padding: 1rem;
+    cursor: pointer;
+}
+.deposit-options-div .deposit-btn-options figcaption
+{
+    color: var(--font-color);
+    font-size: var( --font-size);
+    text-align: center;
+}
+.deposit-options-div .deposit-btn-options img
+{
+    width: 4vw;
+    height: 4vw;
+    object-fit:cover;
+    border-radius: 2vw;
+}
+
+/* depsoite-bitcoin-func */
+.bitcoin-deposit-heaidng-div
+{
+    width: 100%;
+    height: var(--D-height-of-heading);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row nowrap;
+}
+.bitcoin-deposit-heaidng-div .fa-solid
+{
+    font-size: 1.3rem;
+    color: white;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 25px;
+    cursor: pointer;
+}
+.bitcoin-deposit-heaidng-div img
+{
+    width: 25px;
+    height: 25px;
+    border-radius: 10px;
+    margin: 0.5rem;
+}
+.bitcoin-deposit-heaidng-div h1
+{
+    line-height: 10vh;
+    color: white;
+    font-weight: normal;
+}
+.bitcoin-deposit-heaidng-div a
+{
+    text-decoration: none;
+    color: orange;
+    font-size: var( --font-size);
+    margin: 1rem;
+}
+.bitcoin-deposit-options-div 
+{
+    width: 100%;
+    height: auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+.bitcoin-deposit-options-div .bitcoin-div
+{
+    background-color: hsl(240, 22%, 25%);
+    width: 100%;
+    margin-bottom: 0.5rem;
+    border-radius: 10px;
+    padding: 1rem;
+}
+.bitcoin-deposit-options-div .bitcoin-div-1
+{
+    display: grid;
+    grid-template-rows: 2fr auto;
+}
+.bitcoin-div-1-1
+{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-column-gap:2rem ;
+}
+.bitcoin-div-1-1 p
+{
+    font-size: var( --font-size);
+    color: var(--font-color);
+}
+.bitcoin-div-1-1 img
+{
+    width: 10vw;
+    background-color: white;
+    border-radius: 10px;
+}
+.bitcoin-div-1-2 p
+{
+    font-size: 0.7rem;
+    padding: 0.5rem 0px;
+}
+.bitcoin-div-1-2 .bitcoin-input
+{
+    width: 100%;
+    background-color: hsl(240, 22%, 9%);
+    height: 6vh;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
+}
+.bitcoin-div-1-2 .bitcoin-input:focus-within
+{
+    outline: 1px solid orange;
+}
+
+.bitcoin-div-1-2 .bitcoin-input input:first-child
+{
+    width: 70%;
+    height: 95%;
+    font-size: 0.9rem;
+    margin: 0rem 1rem;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: var(--font-color);
+}
+.bitcoin-div-1-2 .bitcoin-input input:last-child
+{
+    width: 20%;
+    height: 70%;
+    font-size:0.6rem;
+    color: white;
+    margin: 0rem 1rem;
+    border-radius: 10px;
+    background-color: rgb(253, 97, 0);
+    outline: none;
+    border: none;
+}
+.bitcoin-div-1-2 a
+{
+    color: orange;
+    text-decoration: none;
+}
+.bitcoin-div-2
+{
+    display: grid;
+    grid-template-columns: 2fr 0.2fr 2fr;
+    grid-template-rows: 1fr 1fr;
+}
+.bitcoin-div-2 .input-coins
+{
+    width: 100%;
+    background-color: hsl(240, 22%, 9%);
+    border-radius: 10px;
+    height: 6vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row nowrap;
+    padding-left: 1rem;
+}
+.bitcoin-div-2 .input-coins input
+{
+
+    width: 100%;
+    height: 95%;
+    font-size: 0.9rem;
+    margin: 0rem 1rem;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: var(--font-color)
+}
+.bitcoin-div-2  p
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bitcoin-div-2 .input-coins img
+{
+    width:15px
+}
+
+.bitcoin-div-2 p:last-child
+{
+    grid-column: 1 / span 4;
+    text-align: center;
+    padding-top: 1rem ;
+}
+.bitcoin-deposit-options-div .bitcoin-div-3
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+}
+.bitcoin-div-3 div
+{
+    width: 45%;
+}
+.bitcoin-div-3 .bitcoin-div-3-1
+{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items:center ;
+}
+.bitcoin-div-3 .bitcoin-div-3-1 button
+{
+    height: 5vh;
+    font-size: var( --font-size);
+    color: var(--font-color);
+    margin: 0rem 1rem;
+    border-radius: 10px;
+    background-color:hsl(240, 22%, 21%);
+    outline: none;
+    border: none;
+    padding: 0rem 1rem; 
+    white-space: nowrap;
+}
+.bitcoin-div-3 .bitcoin-3-2
+{
+    
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-flow: row nowrap;
+}
+
+.bitcoin-div-3 .bitcoin-3-2 img
+{
+    height: 3.5vh; 
+    padding: 0rem 0.4rem;
+}
+.bitcoin-div-3 .bitcoin-3-2 img:nth-child(3)
+{
+    height: 5vh;
+}
+ 
+/* ethereum-deposit -text */
+.eth-deposit-option-div-1-text p:first-child
+{
+    margin-bottom: 2rem;
+}
+.eth-deposit-option-div-1-text div
+{
+    display: grid;
+    grid-template-columns: 0.1fr 1fr;
+    width: 90%;
+}
+
+.eth-deposit-option-div-1-text div p:first-child
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    height:auto;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+    color:rgb(255, 94, 0) ;
+    font-size: 1.3rem;
+}
+.eth-deposit-option-div-1-text div p:last-child
+{
+    color: orange;
+    font-size: inherit;
+}
+
+/* Withdraw rollbit function */
+.rollbit-withdraw-options-form
+{
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    background-color: hsl(240, 22%, 25%);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: column nowrap ;
+    border-radius: 10px;
+}
+.rollbit-withdraw-options-form p:is(:last-child,:nth-child(4))
+{
+    margin-bottom:1rem ;
+}
+.rollbit-withdraw-options-form .rollbit-withdraw-div-1
+{
+    width: 100%;
+    display: flex;
+    align-items:flex-start;
+    flex-flow: column nowrap;
+    margin: 1rem 0rem;
+}
+.rollbit-withdraw-options-form .rollbit-withdraw-div-1 p
+{
+    margin: 0.5rem 0rem;
+}
+.rollbit-withdraw-options-form .rollbit-withdraw-div-1 input
+{
+    margin: 0.3rem 0rem;
+    width: 100%;
+    height: 6vh;
+    border-radius: 10px;
+    background-color: hsl(240, 22%, 9%);
+    border: none;
+    color: var(--font-color);
+    padding:1rem ;
+}
+
+.rollbit-withdraw-options-form .rollbit-withdraw-div-1 input:is(:hover,:focus-within)
+{    outline: 1px solid orange;
+
+}
+.rollbit-withdraw-options-form .rollbit-withdraw-div-2
+{
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 1rem 0rem;
+}
+.rollbit-withdraw-div-2 .rollbit-withdraw-div-2-1
+{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 0.2fr 1fr 0.8fr;
+    margin: 1rem 0rem ;
+}
+.rollbit-withdraw-div-2-1 p
+{
+    text-align: center;
+    line-height: 6vh;
+}
+.rollbit-withdraw-div-2-1 :is(.rolbit-withdraw-input-div-1,.rolbit-withdraw-input-div-2)
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row nowrap;
+    width: 100%;
+    background-color: hsl(240, 22%, 9%);
+    border-radius: 10px;
+    margin-right: 0.2rem;
+    padding-left:0.7rem ;
+    font-size: 1rem;
+}
+.rollbit-withdraw-div-2-1 :is(.rolbit-withdraw-input-div-1,.rolbit-withdraw-input-div-2):is(:hover,:focus-within)
+{
+    outline: 1px solid orange;
+}
+:is(.rolbit-withdraw-input-div-1,.rolbit-withdraw-input-div-2) img
+{
+    width: 20px;
+    margin: 0.3rem ;
+}
+:is(.rolbit-withdraw-input-div-1,.rolbit-withdraw-input-div-2) input
+{
+    
+    margin: 0.3rem 0rem;
+    width: 70%;
+    height: 6vh;
+    border-radius: 10px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: var(--font-color);
+    padding:0.2rem ;
+}
+
+.rollbit-withdraw-div-2-1 input:nth-child(4)
+{
+    width: 70%;
+    height: 7vh;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(26, 255, 26);
+    padding: 0rem 1rem;
+    margin-left:1rem ;
+    white-space:wrap ;
+    cursor: pointer;
+}

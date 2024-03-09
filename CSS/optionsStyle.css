@@ -1,0 +1,27 @@
+#deposite_div
+{
+    display: none;
+    position: absolute;
+    top: 0;
+    left:0;
+    backdrop-filter: blur(5px);
+    z-index: 10;
+}
+#login_div
+{
+    display: none;
+    position: absolute;
+    top: 0;
+    left:0;
+    backdrop-filter: blur(5px);
+    z-index: 10;
+}
+#profile_div
+{
+    display: none;
+    position: absolute;
+    top: 0;
+    left:0;
+    backdrop-filter: blur(5px);
+    z-index: 10;
+}
